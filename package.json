@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "serve": "ts-node src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
