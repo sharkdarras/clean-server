@@ -1,4 +1,4 @@
-import { Path } from "./path";
+import { Path } from "./path.js";
 
 describe("Path", () => {
   test("given requested path matching path, when extracting parameters, then returns empty object", () => {

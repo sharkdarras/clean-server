@@ -1,9 +1,9 @@
-import { PathParams } from "../http/http-request";
+import { type PathParams } from "../http/http-request.js";
 import {
   ParameterPathSegment,
-  PathSegment,
+  type PathSegment,
   StaticPathSegment,
-} from "./path-segment";
+} from "./path-segment.js";
 
 export class Path {
   private segments: PathSegment[];

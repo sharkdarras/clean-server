@@ -1,6 +1,6 @@
-import { HttpHeaders } from "../http/http-headers";
-import { HttpResponse } from "../http/http-response";
-import { ErrorMapper } from "./error-mapper";
+import { HttpHeaders } from "../http/http-headers.js";
+import { type HttpResponse } from "../http/http-response.js";
+import { type ErrorMapper } from "./error-mapper.js";
 
 export class DefaultErrorMapper
   implements ErrorMapper<DefaultErrorResponseBody>

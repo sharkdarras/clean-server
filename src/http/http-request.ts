@@ -1,6 +1,6 @@
 import { Readable } from "stream";
-import { HttpHeaders } from "./http-headers";
-import { HttpMethod } from "./http-method";
+import { HttpHeaders } from "./http-headers.js";
+import { type HttpMethod } from "./http-method.js";
 
 export interface HttpRequest {
   method: HttpMethod;

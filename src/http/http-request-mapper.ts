@@ -1,7 +1,7 @@
 import { IncomingMessage } from "http";
-import { HttpHeaders } from "./http-headers";
-import { HttpMethod } from "./http-method";
-import { HttpRequest } from "./http-request";
+import { HttpHeaders } from "./http-headers.js";
+import { type HttpMethod } from "./http-method.js";
+import { type HttpRequest } from "./http-request.js";
 
 export class HttpRequestMapper {
   map(req: IncomingMessage): HttpRequest {

@@ -1,4 +1,4 @@
-import { MimeType } from "./mime-type";
+import { MimeType } from "./mime-type.js";
 
 export class HttpHeaders {
   constructor(

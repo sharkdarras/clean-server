@@ -1,27 +1,25 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "target": "es2022",
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
-    "checkJs": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    },
-    "experimentalDecorators": true,
-    "module": "commonjs",
+    "verbatimModuleSyntax": true,
+    "module": "NodeNext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "types": ["vitest/globals"],
 
     "strict": true,
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
     "exactOptionalPropertyTypes": true,
-    "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
@@ -30,8 +28,5 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": ["src/**/*"],
-  "ts-node": {
-    "sourceMap": false
-  }
+  "include": ["src/**/*"]
 }
