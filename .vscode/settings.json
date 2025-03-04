@@ -1,0 +1,6 @@
+{
+  "jestrunner.projectPath": "./",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  }
+}
