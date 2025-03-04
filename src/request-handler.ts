@@ -1,16 +1,19 @@
-import { BodyParser } from "./body/body-parser";
-import { JsonOnlyBodyParser } from "./body/json-only-body-parser";
-import { HttpMethod } from "./http/http-method";
+import { type BodyParser } from "./body/body-parser.js";
+import { JsonOnlyBodyParser } from "./body/json-only-body-parser.js";
+import { type HttpMethod } from "./http/http-method.js";
 import {
-  HttpRequest,
-  NoPathParams,
-  NoRequestBody,
-  ParsedHttpRequest,
-} from "./http/http-request";
-import { HttpResponse, NoResponseBody } from "./http/http-response";
-import { Path } from "./path/path";
-import { PassthroughSanitizer } from "./sanitizing/passthrough-sanitizer";
-import { Sanitizer } from "./sanitizing/sanitizer";
+  type HttpRequest,
+  type NoPathParams,
+  type NoRequestBody,
+  type ParsedHttpRequest,
+} from "./http/http-request.js";
+import {
+  type HttpResponse,
+  type NoResponseBody,
+} from "./http/http-response.js";
+import { Path } from "./path/path.js";
+import { PassthroughSanitizer } from "./sanitizing/passthrough-sanitizer.js";
+import { type Sanitizer } from "./sanitizing/sanitizer.js";
 
 export abstract class RequestHandler<
   TRequestPathParams = NoPathParams,

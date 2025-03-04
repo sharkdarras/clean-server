@@ -1,4 +1,4 @@
-import { HttpHeaders } from "./http-headers";
+import { HttpHeaders } from "./http-headers.js";
 
 export interface HttpResponse<TBody> {
   status: number;

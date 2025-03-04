@@ -1,10 +1,10 @@
-import http from "http";
-import { DefaultErrorMapper } from "./errors/default-error-mapper";
-import { defaultNotFoundHttpResponse } from "./errors/default-not-found-http-response";
-import { ErrorMapper } from "./errors/error-mapper";
-import { HttpRequestMapper } from "./http/http-request-mapper";
-import { HttpResponse } from "./http/http-response";
-import { RequestHandler } from "./request-handler";
+import * as http from "http";
+import { DefaultErrorMapper } from "./errors/default-error-mapper.js";
+import { defaultNotFoundHttpResponse } from "./errors/default-not-found-http-response.js";
+import { type ErrorMapper } from "./errors/error-mapper.js";
+import { HttpRequestMapper } from "./http/http-request-mapper.js";
+import { type HttpResponse } from "./http/http-response.js";
+import { RequestHandler } from "./request-handler.js";
 
 export class CleanServer {
   private requestHandlers: RequestHandler<any, any, any>[] = [];

@@ -1,5 +1,5 @@
 import { IncomingMessage } from "http";
-import { BodyParser, BodyParsingError } from "./body-parser";
+import { type BodyParser, BodyParsingError } from "./body-parser.js";
 
 export class JsonOnlyBodyParser implements BodyParser {
   public parse(req: IncomingMessage): Promise<unknown> {

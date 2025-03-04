@@ -1,5 +1,5 @@
 import * as rt from "runtypes";
-import { RuntypeSanitizer } from "./runtype-sanitizer";
+import { RuntypeSanitizer } from "./runtype-sanitizer.js";
 
 describe("RuntypeSanitizer", () => {
   const ExampleValue = rt.Object({

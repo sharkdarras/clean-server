@@ -2,5 +2,8 @@
   "jestrunner.projectPath": "./",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
+  },
+  "markdownlint.config": {
+    "MD041": false
   }
 }

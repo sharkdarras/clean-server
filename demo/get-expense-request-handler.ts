@@ -1,10 +1,10 @@
 import * as rt from "runtypes";
-import { HttpHeaders } from "../lib/http/http-headers";
-import { NoRequestBody, ParsedHttpRequest } from "../lib/http/http-request";
-import { HttpResponse } from "../lib/http/http-response";
-import { Path } from "../lib/path/path";
-import { RequestHandler } from "../lib/request-handler";
-import { RuntypeSanitizer } from "../lib/sanitizing/runtype-sanitizer";
+import { HttpHeaders } from "../src/http/http-headers";
+import { NoRequestBody, ParsedHttpRequest } from "../src/http/http-request";
+import { HttpResponse } from "../src/http/http-response";
+import { Path } from "../src/path/path";
+import { RequestHandler } from "../src/request-handler";
+import { RuntypeSanitizer } from "../src/sanitizing/runtype-sanitizer";
 
 export class GetExpenseRequestHandler extends RequestHandler<
   GetExpensePathParams,

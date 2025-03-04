@@ -1,5 +1,5 @@
-import { HttpHeaders } from "../http/http-headers";
-import { HttpResponse } from "../http/http-response";
+import { HttpHeaders } from "../http/http-headers.js";
+import { type HttpResponse } from "../http/http-response.js";
 
 export const defaultNotFoundHttpResponse: HttpResponse<any> = {
   status: 404,
